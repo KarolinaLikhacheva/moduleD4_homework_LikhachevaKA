@@ -1,0 +1,10 @@
+{% extends 'default.html' %}
+
+{% block content %}
+    <h1>Удаление новости</h1>
+    <p>Вы действительно хотите удалить новость?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+{% endblock %}
